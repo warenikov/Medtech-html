@@ -1,9 +1,31 @@
 /* CSS Document */
+@font-face {
+	font-family: HelveticaNeueCyr-Medium; /* имя шрифта для CSS правил */
+	src: local("HelveticaNeueCyr-Medium"), /* проверяем наличие шрифта в ОС пользователя */
+	url(../fonts/HelveticaNeueCyr-Medium.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+  
+@font-face {
+	font-family: HelveticaNeueCyr-Italic; /* имя шрифта для CSS правил */
+	src: local("HelveticaNeueCyr-Italic"), /* проверяем наличие шрифта в ОС пользователя */
+	url(../fonts/HelveticaNeueCyr-Italic.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
 
+@font-face {
+	font-family: HelveticaNeueCyr-Light; /* имя шрифта для CSS правил */
+	src: local("HelveticaNeueCyr-Light"), /* проверяем наличие шрифта в ОС пользователя */
+	url(../fonts/HelveticaNeueCyr-Light.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+  
 html, body {
 	margin:0;
 }
 
+h1 {
+	font-family:HelveticaNeueCyr-Light;
+	font-size:30px;
+	color:#888ea0;
+}
 .head {
 	width:100%;
 	height:155px;
@@ -49,6 +71,9 @@ nav {
 }
 
 .main_menu_list li {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style:italic;
+	font-size:14px;
 	display:inline;
 	border-right:1px solid #383d49;
 	line-height:70px;
@@ -56,7 +81,7 @@ nav {
 	padding-bottom:25px;
 	padding-left:20px;
 	padding-right:20px;
-	font-style:italic;
+	
 }
 
 .main_menu_list li a {
@@ -102,5 +127,60 @@ nav {
 	margin-right:35px;
 	margin-top:-22px;
 	float:right;
+}
+
+.middle {
+	margin-top:0px;
+	padding:0px;
+	 box-shadow: 0px 7px 33px 5px #b4b4b4;
+}
+
+aside {
+	width:340px;
+	min-height:424px;
+	height:100% !important;
+	float:left;
+	display:block;
+	background:url(../images/aside_bg.png) repeat-y;
+	margin-right:35px;
+}
+
+.content {
+	padding-top:35px;
+	padding-bottom:35px;
+	margin-right:35px;
+	margin-bottom:35px;
+	width:100%;
+	float:none;
+	font-family:HelveticaNeueCyr-Light;
+	font-size:14px;
+	line-height:22px;
 	
+
+}
+
+.new_number_magazine {
+	text-align:center;
+	width:252px;
+	
+	background:url(../images/new_magazine_bottom.png) bottom no-repeat;
+	margin:60px auto;
+}
+
+.magazine_cover {
+	
+}
+
+.magazine_number_title {
+	margin-top:50px;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-style:italic;
+	color:#555555;
+	font-size:16px;
+}
+
+.magazine_number_title a{
+	font-family:HelveticaNeueCyr-Light;
+	font-size:23px;
+	color:#097bbb;
 }
