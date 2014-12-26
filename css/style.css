@@ -1,0 +1,106 @@
+/* CSS Document */
+
+html, body {
+	margin:0;
+}
+
+.head {
+	width:100%;
+	height:155px;
+	background:url(../images/header_bg.png) repeat-x;
+	display:block;
+}
+
+.archive {
+	float:left;
+	margin-left:50px;
+	margin-top:50px;
+}
+
+.logo {
+	float:right;
+	margin-right:30px;
+	margin-top:30px;
+}
+
+header {
+	margin:0px;
+	padding:0px;
+	display:block;
+}
+
+nav {
+	background-color:#414759;
+	height:70px;
+	display:block;
+}
+
+.main_menu {
+	float:left;
+
+	width:auto;
+}
+
+.main_menu_list {
+	list-style:none;
+		margin-left:-40px;
+		padding:0px;
+		margin: auto;
+}
+
+.main_menu_list li {
+	display:inline;
+	border-right:1px solid #383d49;
+	line-height:70px;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:20px;
+	padding-right:20px;
+	font-style:italic;
+}
+
+.main_menu_list li a {
+	color:#caced8;
+}
+
+.main_menu_list li.home {
+	background-color:#3b4050;
+	border:none;
+	padding-left:20px;
+	padding-right:20px;
+
+
+
+	
+}
+
+.search {
+	float:right;
+	height:70px;
+	width:260px;
+	
+}
+
+.search_form {
+	width:180px;
+	height:25px;
+	border:none;
+	margin-left:30px;
+	margin-top:22px;
+	font-style:italic;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.search_button {
+	background:url(../images/search_button.png) no-repeat;
+	width:20px;
+	height:20px;
+	border:none;
+	cursor:pointer;
+	position:relative;
+	margin-right:35px;
+	margin-top:-22px;
+	float:right;
+	
+}
