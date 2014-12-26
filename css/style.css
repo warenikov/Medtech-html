@@ -163,16 +163,16 @@ aside {
 	text-align:center;
 	width:252px;
 	
-	background:url(../images/new_magazine_bottom.png) bottom no-repeat;
 	margin:60px auto;
 }
 
 .magazine_cover {
-	
+	line-height:194px;
+	background:url(../images/new_magazine_bottom.png) bottom no-repeat;
 }
 
 .magazine_number_title {
-	margin-top:50px;
+	margin-top:-50px;
 	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	font-style:italic;
 	color:#555555;
@@ -183,4 +183,5 @@ aside {
 	font-family:HelveticaNeueCyr-Light;
 	font-size:23px;
 	color:#097bbb;
+	font-style:normal;
 }
