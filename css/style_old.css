@@ -1,5 +1,4 @@
-/* Eric Meyer's CSS Reset */
-
+/* CSS Document */
 @font-face {
 	font-family: HelveticaNeueCyr-Medium; /* имя шрифта для CSS правил */
 	src: local("HelveticaNeueCyr-Medium"), /* проверяем наличие шрифта в ОС пользователя */
@@ -17,93 +16,16 @@
 	src: local("HelveticaNeueCyr-Light"), /* проверяем наличие шрифта в ОС пользователя */
 	url(../fonts/HelveticaNeueCyr-Light.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
 }
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	/*list-style: none;*/
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* End of Eric Meyer's CSS Reset */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-	display: block;
-}
-body {
-	font: 12px/18px Arial, sans-serif;
-}
-/* Begin of styles for the demo (you can remove them) */
-a.expand {
-	width: 90px;
-	display: block;
-	margin: 10px 0 0;
-}
-a.expand:hover {
-	height: 500px;
-}
-/* End of of styles for the demo */
-.wrapper {
-	width: 100%;
-	min-width: 1000px;
+  
+html, body {
+	margin:0;
 }
 
 h1 {
 	font-family:HelveticaNeueCyr-Light;
 	font-size:30px;
 	color:#888ea0;
-	line-height:60px;
 }
-
-h2 {
-	font-family:HelveticaNeueCyr-Light;
-	font-size:27px;
-	color:#888ea0;
-	padding-top:25px;
-}
-/* Header
------------------------------------------------------------------------------*/
-.header {
-	height: 225px;
-	background: #FFE680;
-}
-
 .head {
 	width:100%;
 	height:155px;
@@ -121,6 +43,12 @@ h2 {
 	float:right;
 	margin-right:30px;
 	margin-top:30px;
+}
+
+header {
+	margin:0px;
+	padding:0px;
+	display:block;
 }
 
 nav {
@@ -164,7 +92,11 @@ nav {
 	background-color:#3b4050;
 	border:none;
 	padding-left:20px;
-	padding-right:20px;	
+	padding-right:20px;
+
+
+
+	
 }
 
 .search {
@@ -196,54 +128,37 @@ nav {
 	margin-top:-22px;
 	float:right;
 }
-/* Middle
------------------------------------------------------------------------------*/
+
 .middle {
-	border-left: 340px solid #fff;
-	position: relative;
-	
-	
-	
+	margin-top:0px;
+	padding:0px;
+	 box-shadow: 0px 7px 33px 5px #b4b4b4;
+	 height:100% !important;
 }
-.middle:after {
-	display: table;
-	clear: both;
-	content: '';
+
+aside {
+	width:340px;
+	min-height:424px;
+	height:100% !important;
+	float:left;
+	display:block;
+	background:url(../images/aside_bg.png) repeat-y;
+	margin-right:35px;
 }
-.container {
-	width: 100%;
-	float: left;
-	overflow: hidden;
-	margin-right: -100%;
-}
+
 .content {
-	padding: 35px 35px;
+	padding-top:35px;
+	padding-bottom:35px;
+	margin-right:35px;
+	margin-bottom:35px;
+	width:100%;
+	height:100% inherit;
+	
 	font-family:HelveticaNeueCyr-Light;
 	font-size:14px;
 	line-height:22px;
-}
+	
 
-.list_main {
-	padding-top:20px;
-}
-
-.list_main li {
-    color: #03a4df; /* Цвет маркеров */
-	padding-bottom:10px;
-   }
-.list_main li span {
-    color: #555555; /* Цвет текста */
-   }
-
-/* Left Sidebar
------------------------------------------------------------------------------*/
-.left-sidebar {
-	float: left;
-	width: 340px;
-	position: relative;
-	background:url(../images/aside_bg.png) repeat-y;
-	left: -340px;
-	min-height:1500px;
 }
 
 .new_number_magazine {
@@ -306,60 +221,17 @@ nav {
 	line-height:16px;
 	margin-top:15px;
 }
-/* Footer
------------------------------------------------------------------------------*/
-.footer_banner {
-	padding-top:20px;
-	height:149px;
-	width:100%;
-	background:url(../images/footer_bg.png) repeat-x;
-	text-align: center;
+
+.content h2 {
+	font-family:HelveticaNeueCyr-Light;
+	font-size:27px;
+	color:#888ea0;
 }
 
-.banner {
-    display: inline-block;
-	width:304px;
-	height:131px;
-	margin-left:12.5px;
-	margin-right:12.5px;
-	
-}
-
-.footer {
-	height: 295px;
-	background: #3f4557;
-	color:#8197b1;
-	font-family: HelveticaNeueCyr-Light;
-	padding-top:45px;
-}
-
-.footer_logo {
-	width:300px;
-	text-align:center;
-	float:left;
-}
-
-.footer_contacts {
-	width:500px;
-	float:left;
-	font-size:13px;
-	line-height:24px;
-}
-
-.footer_menu {
-	width:300px;
-	float:right;
-	font-family: HelveticaNeueCyr-Italic;
-}
-
-.footer_menu a {
-	color:#8197b1;
-}
-
-.footer_menu ul {
-	list-style:none;
-}
-
-.footer_menu li {
-	padding-top:10px;
-}
+.list_main li {
+    color: #03a4df; /* Цвет маркеров */
+	padding-bottom:10px;
+   }
+.list_main li span {
+    color: #555555; /* Цвет текста */
+   }
