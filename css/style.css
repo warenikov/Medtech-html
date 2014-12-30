@@ -67,18 +67,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	display: block;
 }
 body {
-	font: 12px/18px Arial, sans-serif;
+	font: 12px/18px HelveticaNeueCyr-Light;
 }
-/* Begin of styles for the demo (you can remove them) */
-a.expand {
-	width: 90px;
-	display: block;
-	margin: 10px 0 0;
+
+a {
+	color:#117dbc;
 }
-a.expand:hover {
-	height: 500px;
-}
-/* End of of styles for the demo */
 .wrapper {
 	width: 100%;
 	min-width: 1000px;
@@ -107,7 +101,8 @@ h2 {
 .head {
 	width:100%;
 	height:155px;
-	background:url(../images/header_bg.png) repeat-x;
+	background:url(../images/header_bg.png);
+	background-size:cover;
 	display:block;
 }
 
@@ -221,6 +216,18 @@ nav {
 	font-family:HelveticaNeueCyr-Light;
 	font-size:14px;
 	line-height:22px;
+}
+
+.error {
+	font-size:36px;
+	color:#888ea0;
+}
+
+.error .code {
+	font-family:HelveticaNeueCyr-Medium;
+	font-size:100px;
+	line-height:150px;
+	color:#25a4d9;
 }
 
 .list_main {
