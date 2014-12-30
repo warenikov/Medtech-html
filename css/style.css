@@ -1,0 +1,378 @@
+/* Eric Meyer's CSS Reset */
+
+@font-face {
+	font-family: HelveticaNeueCyr-Medium; /* имя шрифта для CSS правил */
+	src: local("HelveticaNeueCyr-Medium"), /* проверяем наличие шрифта в ОС пользователя */
+	url(../fonts/HelveticaNeueCyr-Medium.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+  
+@font-face {
+	font-family: HelveticaNeueCyr-Italic; /* имя шрифта для CSS правил */
+	src: local("HelveticaNeueCyr-Italic"), /* проверяем наличие шрифта в ОС пользователя */
+	url(../fonts/HelveticaNeueCyr-Italic.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+
+@font-face {
+	font-family: HelveticaNeueCyr-Light; /* имя шрифта для CSS правил */
+	src: local("HelveticaNeueCyr-Light"), /* проверяем наличие шрифта в ОС пользователя */
+	url(../fonts/HelveticaNeueCyr-Light.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	/*list-style: none;*/
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px HelveticaNeueCyr-Light;
+}
+
+a {
+	color:#117dbc;
+}
+.wrapper {
+	width: 100%;
+	min-width: 1000px;
+}
+
+h1 {
+	font-family:HelveticaNeueCyr-Light;
+	font-size:30px;
+	color:#888ea0;
+	line-height:60px;
+}
+
+h2 {
+	font-family:HelveticaNeueCyr-Light;
+	font-size:27px;
+	color:#888ea0;
+	padding-top:25px;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 225px;
+	background: #FFE680;
+}
+
+.head {
+	width:100%;
+	height:155px;
+	background:url(../images/header_bg.png);
+	background-size:cover;
+	display:block;
+}
+
+.archive {
+	float:left;
+	margin-left:50px;
+	margin-top:50px;
+}
+
+.logo {
+	float:right;
+	margin-right:30px;
+	margin-top:30px;
+}
+
+nav {
+	background-color:#414759;
+	height:70px;
+	display:block;
+}
+
+.main_menu {
+	float:left;
+
+	width:auto;
+}
+
+.main_menu_list {
+	list-style:none;
+		margin-left:-40px;
+		padding:0px;
+		margin: auto;
+}
+
+.main_menu_list li {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style:italic;
+	font-size:14px;
+	display:inline;
+	border-right:1px solid #383d49;
+	line-height:70px;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:20px;
+	padding-right:20px;
+	
+}
+
+.main_menu_list li a {
+	color:#caced8;
+}
+
+.main_menu_list li.home {
+	background-color:#3b4050;
+	border:none;
+	padding-left:20px;
+	padding-right:20px;	
+}
+
+.search {
+	float:right;
+	height:70px;
+	width:260px;
+	
+}
+
+.search_form {
+	width:180px;
+	height:25px;
+	border:none;
+	margin-left:30px;
+	margin-top:22px;
+	font-style:italic;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.search_button {
+	background:url(../images/search_button.png) no-repeat;
+	width:20px;
+	height:20px;
+	border:none;
+	cursor:pointer;
+	position:relative;
+	margin-right:35px;
+	margin-top:-22px;
+	float:right;
+}
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	border-left: 340px solid #fff;
+	position: relative;
+	
+	
+	
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-right: -100%;
+}
+.content {
+	padding: 35px 35px;
+	font-family:HelveticaNeueCyr-Light;
+	font-size:14px;
+	line-height:22px;
+}
+
+.error {
+	font-size:36px;
+	color:#888ea0;
+}
+
+.error .code {
+	font-family:HelveticaNeueCyr-Medium;
+	font-size:100px;
+	line-height:150px;
+	color:#25a4d9;
+}
+
+.list_main {
+	padding-top:20px;
+}
+
+.list_main li {
+    color: #03a4df; /* Цвет маркеров */
+	padding-bottom:10px;
+   }
+.list_main li span {
+    color: #555555; /* Цвет текста */
+   }
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	float: left;
+	width: 340px;
+	position: relative;
+	background:url(../images/aside_bg.png) repeat-y;
+	left: -340px;
+	min-height:1500px;
+}
+
+.new_number_magazine {
+	text-align:center;
+	width:252px;
+	
+	margin:60px auto;
+}
+
+.magazine_cover {
+	line-height:194px;
+	background:url(../images/new_magazine_bottom.png) bottom no-repeat;
+}
+
+.magazine_number_title {
+	margin-top:-50px;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-style:italic;
+	color:#555555;
+	font-size:16px;
+}
+
+.magazine_number_title a{
+	font-family:HelveticaNeueCyr-Light;
+	font-size:23px;
+	color:#097bbb;
+	font-style:normal;
+}
+
+.block_popular {
+	width:100%;
+	margin:0px 35px;
+}
+
+.popular_title {
+	font-family: HelveticaNeueCyr-Light;
+	color:#888ea0;
+	font-size:24px;
+}
+
+.popular_articles {
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-right:35px;
+}
+
+.popular_article {
+	margin-top:20px;
+}
+
+.article_title a {
+	color:#097bbb;
+	font-family: HelveticaNeueCyr-Medium;
+}
+
+.article_content {
+	font-family: HelveticaNeueCyr-Light;
+	color:#888ea0;
+	font-size:12px;
+	line-height:16px;
+	margin-top:15px;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer_banner {
+	padding-top:20px;
+	height:auto;
+	width:100%;
+	background:#c5ced1 url(../images/footer_bg.png) repeat-x;
+	text-align: center;
+}
+
+.footer_banner_container {
+	width:1000px;
+	margin:0px auto;
+}
+
+.banner {
+    display: inline-block;
+	width:304px;
+	height:131px;
+	margin-left:12.5px;
+	margin-right:12.5px;
+	margin-bottom:20px;
+	
+}
+
+.footer {
+	height: 295px;
+	background: #3f4557;
+	color:#8197b1;
+	font-family: HelveticaNeueCyr-Light;
+	padding-top:45px;
+}
+
+.footer_logo {
+	width:300px;
+	text-align:center;
+	float:left;
+}
+
+.footer_contacts {
+	width:500px;
+	float:left;
+	font-size:13px;
+	line-height:24px;
+}
+
+.footer_menu {
+	width:300px;
+	float:right;
+	font-family: HelveticaNeueCyr-Italic;
+}
+
+.footer_menu a {
+	color:#8197b1;
+}
+
+.footer_menu ul {
+	list-style:none;
+}
+
+.footer_menu li {
+	padding-top:10px;
+}
