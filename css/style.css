@@ -82,7 +82,7 @@ h1 {
 	font-family:HelveticaNeueCyr-Light;
 	font-size:30px;
 	color:#888ea0;
-	line-height:60px;
+	line-height:40px;
 }
 
 h2 {
@@ -90,6 +90,13 @@ h2 {
 	font-size:27px;
 	color:#888ea0;
 	padding-top:25px;
+}
+
+h2.authors {
+	font-family: HelveticaNeueCyr-Medium;
+	font-size:14px;
+	color:#000000;
+	font-style:italic;
 }
 /* Header
 -----------------------------------------------------------------------------*/
@@ -218,6 +225,20 @@ nav {
 	line-height:22px;
 }
 
+.breadcrumbs {
+	margin-top:35px;
+	margin-left:35px;
+	font-family:HelveticaNeueCyr-Light;
+	color:#9197a7;
+	font-size:16px;
+}
+
+.breadcrumbs a {
+	font-family:HelveticaNeueCyr-Light;
+	color:#9197a7;
+	font-size:14px;
+}
+
 .error {
 	font-size:36px;
 	color:#888ea0;
@@ -239,9 +260,26 @@ nav {
 	padding-bottom:10px;
    }
 .list_main li span {
-    color: #555555; /* Цвет текста */
-   }
+	color: #555555; /* Цвет текста */
+}
 
+.arhiv_item {
+	width:100%;
+	margin-top:25px;
+}
+
+.arhiv_pages {
+	float:right;	
+}
+.arhiv_authors {
+	font-size:12px;
+	margin-top:5px;
+}
+
+.arhiv_back {
+	margin-top:30px;
+	float:right;
+}
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
 .left-sidebar {
