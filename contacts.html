@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<title>МедТех - Архив</title>
+	<title>МедТех - Контакты</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="css/style.css" rel="stylesheet">
@@ -40,18 +40,62 @@
 	<div class="middle">
 
 		<div class="container">
-        <div class="breadcrumbs"><span><a href="#">Архив</a></span> / <span><a href="#">Номера за 2014 год</a></span></div>
 			<main class="content">
-				<h1>Диагностика внутриутробной гипоксии головного мозга новорожденного с помощью тепловизорной видеозаписи.</h1>
-                <h2 class="authors">Уракова Н.А., Ураков А.Л.</h2>
-                <p><br />Аннотация — это не зависимый от статьи источник информации. Ее пишут после завершения работы над основным тек­стом статьи. Она включает характеристику основной темы, проблемы, объекта, цели работы и ее результаты. В ней указывают, что нового несет в себе данный документ в сравнении с другими, родст­венными по тематике и целевому назначению. Рекомендуемый объ­ем — 100 – 250 слов на русском и английском языках.</p><br />
-                <a href="pdf/0.pdf"><img src="images/text_pdf.png" width="268" height="49" alt=" " /></a>
-                <div class="arhiv_back"><a href="#">Вернуться к содержанию</a></div>
+				<h1>Контакты</h1>
+                <p>
+                Почтовый адрес: 119034, Москва, ул. Остоженка, д. 1/9, офис 12 МНТО приборостроителей и метрологов<br />
+Телефон: (495) 695-10-70, (495) 695-10-71<br />
+E-mail: <a href="#">info@mtjournal.ru</a> или <a href="#">galina@mtjournal.ru</a> (для авторов)<br />
+<a href="#">kavalerov@mail.ru</a> (для подписки и рекламы)<br />
+                </p><br /><br />
+                <div id="ymaps-map-123" style="width: auto; height: 390px;"></div>
+                <script type="text/javascript">
+	function f123(ymaps){
+		var objects = [];
+		var events = {};
+		try{}catch(e){alert(e);};
+		var map;
+		objects["map1"] = map = new ymaps.Map("ymaps-map-123", {
+			center: [56.667164009473666,36.71930897657623],
+					zoom: 8,
+					type: "yandex#map",
+					behaviors:['scrollZoom','drag','dblClickZoom']
+					});
+		map.controls.add("typeSelector",{"top":2.5,"right":4}).add("zoomControl",{"bottom":117.5,"left":7});
+		map.geoObjects.add(objects[' '] = new ymaps.Placemark(
+			[56.8512143231136,35.94202626173247],
+			{"iconContent":"","balloonContent":" ","xname":" "},
+			{"visible":true,"iconImageHref":"C:/Users/Иван/Documents/GitHub/Medtech-html/images/metka.png","iconImageSize":[56,81],"iconImageOffset":[-10,-40],"iconContentLayout":"twirl#geoObjectIconContent","balloonContentBodyLayout":"twirl#geoObjectBalloonBodyContent","hintContentLayout":"twirl#geoObjectHintContent"}
+			));
+	};
+</script>
+		<script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&amp;lang=ru-RU&amp;onload=f123"></script>
+        
+        <h2>Обратная связь</h2><br />
+        <div class="contact_form">
+            <div class="lbl"><label>Ф.И.О. <i class="req"></i></label></div>
+        	<div class="elem"><input type="text" /></div>
+            <br />
+            <div class="lbl"><label>E-Mail <i class="req"></i></label></div>
+        	<div class="elem"><input type="text" /></div>
+            <br />
+            <div class="lbl"><label>Телефон</label></div>
+        	<div class="elem"><input type="text" /></div>
+            <br />
+            <div class="lbl"><label>Сообщение <i class="req"></i></label></div>
+        	<div class="elem"><textarea rows="5"></textarea></div>
+            <br />
+            <div class="lbl"><label>Введите код с картинки <i class="req"></i></label></div>
+            <div class="elem">
+            	<img style="float:left" src="images/captcha.png" width="108" height="54" />
+            	<input type="text" class="captcha"/>
+            	<div class="button_send"><img src="images/button_send.png" width="128" height="49" /></div>
                 
-                <div class="about_authors">
-                	<h2>Сведения об авторах</h2>
-                	<span>Сведения об авторах.</span>
-                </div>
+           	</div>
+        </div><br />
+        <p><i class="req"></i> - обязательно для заполнения.</p>
+        
+        
 			</main><!-- .content -->
 		</div><!-- .container-->
 

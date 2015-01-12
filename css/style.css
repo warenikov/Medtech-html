@@ -18,6 +18,12 @@
 	url(../fonts/HelveticaNeueCyr-Light.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
 }
 
+@font-face {
+	font-family: HelveticaNeueCyr-Bold; /* имя шрифта для CSS правил */
+	src: local("HelveticaNeueCyr-Bold"), /* проверяем наличие шрифта в ОС пользователя */
+	url(../fonts/HelveticaNeueCyr-Bold.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,6 +79,10 @@ body {
 a {
 	color:#117dbc;
 }
+
+strong {
+	font-weight:bold;
+}
 .wrapper {
 	width: 100%;
 	min-width: 1000px;
@@ -90,6 +100,7 @@ h2 {
 	font-size:27px;
 	color:#888ea0;
 	padding-top:25px;
+	line-height:50px;
 }
 
 h2.authors {
@@ -259,6 +270,7 @@ nav {
     color: #03a4df; /* Цвет маркеров */
 	padding-bottom:10px;
    }
+   
 .list_main li span {
 	color: #555555; /* Цвет текста */
 }
@@ -279,6 +291,177 @@ nav {
 .arhiv_back {
 	margin-top:30px;
 	float:right;
+}
+
+.about_authors {
+	margin-top:20px;
+}
+
+.article_requrements {
+	width:100%;
+	background-color:#e9eff1;
+	margin-top:25px;
+	padding-bottom:25px;
+	margin-bottom:25px;
+}
+
+.requirement {
+	padding-top:25px;
+	padding-left:20px;
+}
+
+.req_title:before {
+	content:url(../images/arrow_right.png);
+	margin-right:10px;
+}
+
+.req_title_two:before {
+	content:url(../images/arrow_left.png);
+	margin-right:10px;
+}
+
+.req_title, .req_title_two {
+	font-family:HelveticaNeueCyr-Medium;
+	font-size:16px;
+	color:#097bbb;
+	font-style:normal;
+	text-decoration:underline;
+}
+
+h2.adv {
+	padding-left:25px;	
+}
+.req_body {
+	font-family: HelveticaNeueCyr-Italic;
+	color:#555555;
+	font-size:14px;
+}
+
+.list_req {
+	padding-top:20px;
+	padding-left:25px;
+}
+
+.list_req li {
+    color: #03a4df; /* Цвет маркеров */
+}
+   
+.list_req li span {
+	color: #555555; /* Цвет текста */
+}
+
+.lbl {
+	width: 170px;
+	float:left;
+}
+
+.contact_form {
+	
+}
+
+.lbl {
+	float:left;
+}
+
+.elem {
+	margin-left: 170px;
+}
+
+.elem > input {
+	width: 100%;
+	height:30px;
+}
+
+.elem > textarea {
+	width: 99.7%;
+	resize:none;
+}
+
+.elem > input.captcha {
+	width: 100px;
+	margin-top:10px;
+	margin-left:15px;
+}
+
+.button_send {
+	float:right;
+}
+
+.req:before {
+	content:"*";
+	color:#1c9dd4;
+}
+
+.conference {
+	margin-bottom:25px;
+}
+
+.conf_title {
+	font-family: HelveticaNeueCyr-Bold;
+	font-size:14px;
+	color:#097bbb;
+	line-height:28px;
+}
+
+.conf_body {
+}
+
+.subscr_index {
+	font-family: HelveticaNeueCyr-Bold;
+	font-size:24px;
+}
+
+.subscr_price {
+	font-family: HelveticaNeueCyr-Bold;
+	font-size:24px;
+	color:#097bbb;
+	line-height:50px;
+}
+
+.subscr_button_box {
+	margin:30px 25% 30px 25%;
+  width:50%;
+
+}
+
+.redakcia {
+	list-style:none;
+}
+
+.redakc_item {
+	margin-top:25px;
+	margin-bottom:25px;
+	display:block;
+	clear:both;
+}
+
+.redakc_photo_box {
+	float:left;	
+	margin-right:30px;
+}
+
+.redakc_photo {
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:5px;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 5px 1px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 5px 1px rgba(50, 50, 50, 0.75);
+}
+
+.redakc_title {
+	font-family: HelveticaNeueCyr-Medium;
+	font-size:24px;
+	color:#888ea0;
+	line-height:30px;
+}
+
+.redakc_subtitle {
+	font-family: HelveticaNeueCyr-Italic;
+	font-size:16px;
+	color:#000000;
 }
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
